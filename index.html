@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="icon">Vishal</div>
+      <div class="menu">
+        <ul>
+          <li><a id="active" href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><button id="contact">Contact Us</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="mobile-view">
+      <div class="mobile-left">Vishal</div>
+      <ul class="mobile-middle">
+        <li><a id="active" href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><button id="contact-mob">Contact Us</button></li>
+      </ul>
+      <div id="mobile-right"><img src="./menu.svg" alt="" /></div>
+    </header>
+
+    <dialog id="login">
+      <form id="myForm" class="form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br />
+        <small id="nameError" class="error"></small><br />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" /><br />
+        <small id="emailError" class="error"></small><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" /><br />
+        <small id="phoneError" class="error"></small><br />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option></select
+        ><br />
+        <small id="genderError" class="error"></small><br />
+
+        <input type="submit" id="submit" value="Submit" />
+        <div id="close">Close</div>
+      </form>
+    </dialog>
+    <div class="main">
+      <div class="text">Welcome to our Landing Page</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <section>
+      <h1>About us</h1>
+      <div class="about">
+        <div class="about_left">
+          <p class="langchange">
+            My name is Vishal Kumar Shakya.I am a Web Developer
+          </p>
+          <button id="lang">Click to change</button>
+        </div>
+        <div class="about_right">
+          <!-- <img src="./img1.jpg"  alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
